@@ -51,7 +51,7 @@ const Where: React.FC = () => {
 
   const handleShowResults = (data: { search: string }) => {
     if (data.search.length >= 2) {
-      router.push({ pathname: '/search', params: { selectedLocations } });
+      router.replace({ pathname: '/search'});
     }
   };
 
