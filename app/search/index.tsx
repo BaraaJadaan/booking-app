@@ -38,19 +38,19 @@ const Search = () => {
       iconSource={require('@/assets/images/location-icon.png')}
       placeholder="Where?"
       value={location}
-      onPress={() => router.push('search/filter/where')}
+      onPress={() => router.replace('search/filter/where')}
       />
       <ClickableInput
         iconSource={require('@/assets/images/calendar-icon.png')}
         placeholder="When?"
         value={date}
-        onPress={() => router.push('search/filter/when')}
+        onPress={() => router.replace('search/filter/when')}
       />
       <ClickableInput
         iconSource={require('@/assets/images/guests-icon.png')}
         placeholder="Guests?"
         value={guests}
-        onPress={() => router.push('search/filter/guests')}
+        onPress={() => router.replace('search/filter/guests')}
       />
       </View>
     </View>
